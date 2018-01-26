@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
+        
+	<meta charset="utf-8" />
+		<style>
+			*
+			{
+			font-family: Trebuchet MS
+			}
+			h1
+			{
+			color: maroon;
+			font-size: 50px
+			}
+			body
+			{
+			background-image: url("fond_site.jpeg") ;
+			}
+			p
+			{
+			box-shadow: 2px 2px 0px black;
+			}
+			result{
+			color: red;
+			font-size: 30px;
+			font-style: italic;
+			}
+			
+		</style>
+		<title>Td2 : Dressing up a website</title>
+
+ </head>
   <body>
+  
+	<a><center><img src ="esilv_logo.png" alt="logo" title="Ceci est un TD de l'ESILV"  ></a></center>
+	<center><h1>Trucker information</h1></center>
     <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+      <p><input class="name" type="text" placeholder="Trucker name" style="width: -webkit-fill-available;"/> </p>
+      <p><input class="price-by-km" type="number" placeholder="Price by km" style="width: -webkit-fill-available;"/></p> 
+      <p><input class="price-by-cubic" type="number" placeholder="Price by m3" style="width: -webkit-fill-available;"/></p> 
     </div>
+	<center><h1>Shipper information</h1></center>
     <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
-    <script src="convargo.js"></script>
+      <p><input class="name" type="text" placeholder="Shipper name" style="width: -webkit-fill-available;"/></p> 
+      <p><input class="distance" type="number" placeholder="Distance in km" style="width: -webkit-fill-available;"/></p> 
+      <p><input class="volume" type="number" placeholder="Volume in m3" style="width: -webkit-fill-available;"/></p> 
+      <center><div>
+	  <input class="option" id="option" type="checkbox" placeholder="Deductible option"/>
+	  <label for="option">Deductible option</label></center>
+	</div>
+	</div>
+	<br/>
+    <center><button id="compute">Compute</button></center>
+	<br/>
+	
+    <center><result><div id="actors"></div></center></result>
+	<script src="convargo.js"></script>
+	
     <script src="index.js"></script>
   </body>
 </html>
